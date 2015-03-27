@@ -1,0 +1,7 @@
+Track      |   License URL
+----------------------------------------------
+ 01        |   http://creativecommons.org/licenses/by-sa/3.0/
+ 02        |   http://creativecommons.org/licenses/by-sa/3.0/
+ 03        |   http://creativecommons.org/licenses/by-sa/3.0/
+ 04        |   http://creativecommons.org/licenses/by-sa/3.0/
+ 05        |   http://creativecommons.org/licenses/by-sa/3.0/
