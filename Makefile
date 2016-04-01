@@ -22,8 +22,12 @@ tool-check: check-tools.sh
 	@echo "Checking for Internet access"
 	@nm-online || (echo "*** Internet connection required" ; exit 1)
 
+user-check: check-user.sh
+	@echo "Checking GNOME user, please enter sudo password if necessary"
+	@sudo ./check-user.sh
+	@set -e ; if test "`id -u gnome 2> /dev/null `" != "`id -u 2> /dev/null`" ; then echo "*** This script should only run as the GNOME user" ; exit 1 ; fi
+
 install-data: videos
 	for i in DOCUMENTS PICTURES MUSIC VIDEOS; do cp -r $$i/* "`xdg-user-dir $$i`"/ ; done
 
-install: install-data
-	su -c "install -m0644 user-icons/* /var/lib/AccountsService/icons/"
+install: user-check install-data
