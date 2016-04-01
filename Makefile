@@ -20,7 +20,7 @@ tool-check: check-tools.sh
 	@echo "Checking for tools"
 	@./check-tools.sh
 	@echo "Checking for Internet access"
-	@nm-online || (echo "Internet connection required" ; exit 1)
+	@nm-online || (echo "*** Internet connection required" ; exit 1)
 
 install-data: videos
 	for i in DOCUMENTS PICTURES MUSIC VIDEOS; do cp -r $$i/* "`xdg-user-dir $$i`"/ ; done
