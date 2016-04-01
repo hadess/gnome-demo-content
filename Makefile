@@ -1,3 +1,5 @@
+.NOTPARALLEL:
+
 VERSION = 3.20
 LOCALE = fr
 
