@@ -1,8 +1,10 @@
 = Demo content for GNOME =
 
-Most of the content is from:
-
 See below or within each folder for the copyright notices of the media.
+
+To install and deploy the test data, a number of tools are required:
+* youtube-dl
+* ffmpeg
 
 == Images, Videos and Documents ==
 
@@ -13,13 +15,7 @@ FIXME COPYRIGHT/LICENSE
 
 == GNOME release video ==
 
-Video:
-https://cloud.gnome.org/index.php/s/0Ps8g4chNy5Tl9l
-
-Subtitles:
-https://git.gnome.org/browse/video-subtitles/tree/video-subtitles/gnome316
-
-FIXME SUBTITLE IS ONLY IN FRENCH
+Video and subtitles, under the CC-BY-SA 3.0 license. See Makefile for source
 
 == Music ==
 
