@@ -1,11 +1,11 @@
 .NOTPARALLEL:
 
-VERSION = 3.20
+VERSION = 3.24
 LOCALE = fr
 
 all: tool-check videos
 
-YOUTUBE_URL = https://www.youtube.com/watch?v=JU2f_jkPRq4
+YOUTUBE_URL = https://www.youtube.com/watch?v=_Z1PAXiyTB0
 videos: VIDEOS/GNOME-$(VERSION).webm VIDEOS/GNOME-$(VERSION).srt
 
 VIDEOS/GNOME-$(VERSION).webm:
