@@ -3,10 +3,11 @@
 VERSION = 3.24
 LOCALE = fr
 
-all: tool-check videos
+all: tool-check medias
 
 YOUTUBE_URL = https://www.youtube.com/watch?v=_Z1PAXiyTB0
-videos: VIDEOS/GNOME-$(VERSION).webm VIDEOS/GNOME-$(VERSION).srt
+medias: VIDEOS/GNOME-$(VERSION).webm VIDEOS/GNOME-$(VERSION).srt
+	@git lfs fetch
 
 VIDEOS/GNOME-$(VERSION).webm:
 	@echo "Downloading release video and subtitles"
