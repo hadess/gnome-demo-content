@@ -10,6 +10,9 @@ medias: VIDEOS/GNOME-$(VERSION).webm VIDEOS/GNOME-$(VERSION).srt
 	@git lfs fetch
 
 VIDEOS/GNOME-$(VERSION).webm:
+	@./check-videos-dl.sh
+	@echo "Checking for Internet access"
+	@nm-online || (echo "*** Internet connection required" ; exit 1)
 	@echo "Downloading release video and subtitles"
 	@youtube-dl -o VIDEOS/GNOME-$(VERSION).'%(ext)s' -f 248 --all-subs --convert-subs srt $(YOUTUBE_URL)
 
