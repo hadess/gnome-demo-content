@@ -28,7 +28,7 @@ user-check: check-user.sh
 	@sudo ./check-user.sh
 	@set -e ; if test "`id -u gnome 2> /dev/null `" != "`id -u 2> /dev/null`" ; then echo "*** This script should only run as the GNOME user" ; exit 1 ; fi
 
-install-data: videos
+install-data: medias
 	for i in DOCUMENTS PICTURES MUSIC VIDEOS; do cp -r $$i/* "`xdg-user-dir $$i`"/ ; done
 
 install: user-check install-data
