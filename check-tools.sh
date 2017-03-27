@@ -13,4 +13,5 @@ check_gst()
 check nm-online
 check youtube-dl
 check ffmpeg
+check git-lfs
 check_gst mad

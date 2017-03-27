@@ -5,6 +5,7 @@ See below or within each folder for the copyright notices of the media.
 To install and deploy the test data, a number of tools are required:
 * youtube-dl
 * ffmpeg
+* git-lfs
 
 == Images, Videos and Documents ==
 
