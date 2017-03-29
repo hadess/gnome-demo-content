@@ -8,6 +8,7 @@ all: tool-check medias
 YOUTUBE_URL = https://www.youtube.com/watch?v=_Z1PAXiyTB0
 medias: VIDEOS/GNOME-$(VERSION).webm VIDEOS/GNOME-$(VERSION).srt
 	@git lfs fetch
+	@git lfs checkout
 
 VIDEOS/GNOME-$(VERSION).webm:
 	@./check-videos-dl.sh
