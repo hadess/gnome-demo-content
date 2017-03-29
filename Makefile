@@ -18,7 +18,7 @@ VIDEOS/GNOME-$(VERSION).webm:
 
 VIDEOS/GNOME-$(VERSION).srt: VIDEOS/GNOME-$(VERSION).webm
 	@echo "Creating link for $(LOCALE) subtitle"
-	@ln -s -r VIDEOS/GNOME-$(VERSION).$(LOCALE).srt VIDEOS/GNOME-$(VERSION).srt
+	@ln -s -f -r VIDEOS/GNOME-$(VERSION).$(LOCALE).srt VIDEOS/GNOME-$(VERSION).srt
 
 tool-check: check-tools.sh
 	@echo "Checking for tools"
